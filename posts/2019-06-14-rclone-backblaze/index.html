@@ -11,7 +11,8 @@
 <meta itemprop="name" content="Backing up NextCloud data with Rclone and Backblaze">
 <meta itemprop="description" content="We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
 First we need a couple of items installed. 
-&#43; Install some prerequisites: yum install goland git -You should have setup backblaze b2, and created an application key.">
+&#43; Install some prerequisites: yum install goland git
+-You should have setup backblaze b2, and created an application key.">
 
 
 <meta itemprop="datePublished" content="2019-06-14T03:41:10&#43;02:00" />
@@ -24,7 +25,8 @@ First we need a couple of items installed.
 <meta property="og:title" content="Backing up NextCloud data with Rclone and Backblaze" />
 <meta property="og:description" content="We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
 First we need a couple of items installed. 
-&#43; Install some prerequisites: yum install goland git -You should have setup backblaze b2, and created an application key." />
+&#43; Install some prerequisites: yum install goland git
+-You should have setup backblaze b2, and created an application key." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/" />
 <meta property="article:published_time" content="2019-06-14T03:41:10&#43;02:00"/>
@@ -33,7 +35,8 @@ First we need a couple of items installed.
 <meta name="twitter:title" content="Backing up NextCloud data with Rclone and Backblaze"/>
 <meta name="twitter:description" content="We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
 First we need a couple of items installed. 
-&#43; Install some prerequisites: yum install goland git -You should have setup backblaze b2, and created an application key."/>
+&#43; Install some prerequisites: yum install goland git
+-You should have setup backblaze b2, and created an application key."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -82,18 +85,19 @@ First we need a couple of items installed.
 			<div class="content">
 				
 
-<p>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone.  We are NOT trying to do a full server backup, I can rebuild the server.  We are only going to backup the nextcloud data directory.<br />
+<p><p>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone.  We are NOT trying to do a full server backup, I can rebuild the server.  We are only going to backup the nextcloud data directory.<br />
+</p>
 <br /></p>
 
 <h3 id="first-we-need-a-couple-of-items-installed">First we need a couple of items installed.<a href="#first-we-need-a-couple-of-items-installed" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 
 <p><br />
-+ Install some prerequisites: <code>yum install goland git</code>
-  -<em>You should have setup backblaze b2, and created an application key.  If not, I will write this up later.</em>
-+ Make a place for Go: <code>mkdir $HOME/gopath</code>
-+ Add Go&rsquo;s folder to your path: <code>export GOPATH=&quot;$HOME/gopath/&quot;</code>
-+ Install rclone in the GO folder: <code>go get github.com/ncw/rclone</code>
-+ Copy the program into your binary folder: <code>cp $GOPATH/bin/rclone /usr/bin/</code>
++ Install some prerequisites: <code>yum install goland git</code><br>
+  -<em>You should have setup backblaze b2, and created an application key.  If not, I will write this up later.</em><br>
++ Make a place for Go: <code>mkdir $HOME/gopath</code><br>
++ Add Go&rsquo;s folder to your path: <code>export GOPATH=&quot;$HOME/gopath/&quot;</code><br>
++ Install rclone in the GO folder: <code>go get github.com/ncw/rclone</code><br>
++ Copy the program into your binary folder: <code>cp $GOPATH/bin/rclone /usr/bin/</code><br>
 <br /></p>
 
 <h3 id="now-we-need-to-configure-rclone-to-use-backblaze-rclone-config">Now we need to configure rclone to use Backblaze: <code>rclone config</code><a href="#now-we-need-to-configure-rclone-to-use-backblaze-rclone-config" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
