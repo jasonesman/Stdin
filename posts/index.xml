@@ -39,14 +39,14 @@ First we need a couple of items installed.
 <h3 id="now-we-need-to-configure-rclone-to-use-backblaze-rclone-config">Now we need to configure rclone to use Backblaze: <code>rclone config</code></h3>
 
 <p><br />
-+ Choose New Remote
-+ Type Backblaze for remote name
-+ Choose 5 for Backblaze B2
-+ Enter your Application ID
-+ Enter your Application Key
-+ Hit N for no
-+ Choose Y for yes its ok
-+ Choose Quit config
++ Choose New Remote<br />
++ Type Backblaze for remote name<br />
++ Choose 5 for Backblaze B2<br />
++ Enter your Application ID<br />
++ Enter your Application Key<br />
++ Hit N for no<br />
++ Choose Y for yes its ok<br />
++ Choose Quit config<br />
 <br /></p>
 
 <h3 id="crontab-and-schedule">Crontab and schedule</h3>
