@@ -6,15 +6,15 @@
     <description>Recent content on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jun 2019 03:41:10 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Backing up NextCloud data with Rclone and Backblaze</title>
+      <title>Backing up NextCloud data with Rclone and Backblaze B2</title>
       <link>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</link>
-      <pubDate>Fri, 14 Jun 2019 03:41:10 +0200</pubDate>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</guid>
       <description>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
@@ -24,9 +24,9 @@ First we need a couple of items installed.
     </item>
     
     <item>
-      <title>First Project!  Goodbye Gmail</title>
+      <title>First Project! Goodbye Gmail</title>
       <link>https://stdin.stdout.host/posts/2019-06-11-first-project/</link>
-      <pubDate>Tue, 11 Jun 2019 03:41:10 +0200</pubDate>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/posts/2019-06-11-first-project/</guid>
       <description>Goodbye Google  This project will be an on going project. It will be how to get rid of most of Google and Facebook from my life. I&#39;ve started and already feel better about it.
@@ -35,9 +35,9 @@ Goodbye Gmail  The first step in this process is to get rid of Gmail. There are 
     </item>
     
     <item>
-      <title>Welcome to New Home!</title>
+      <title>Welcome to my New Home!</title>
       <link>https://stdin.stdout.host/posts/2019-06-10-welcome/</link>
-      <pubDate>Mon, 10 Jun 2019 03:41:10 +0200</pubDate>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/posts/2019-06-10-welcome/</guid>
       <description>Welcome to a place for projects I want to do or i&amp;rsquo;m going to do&amp;hellip;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rclone on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/categories/rclone/</link>
+    <description>Recent content in rclone on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/categories/rclone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backing up NextCloud data with Rclone and Backblaze B2</title>
+      <link>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</guid>
+      <description>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
+First we need a couple of items installed. 
++ Install some prerequisites: yum install goland git
+-You should have setup backblaze b2, and created an application key.</description>
+    </item>
+    
+  </channel>
+</rss>

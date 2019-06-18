@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/categories/firefox/</link>
+    <description>Recent content in firefox on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/categories/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome to my New Home!</title>
+      <link>https://stdin.stdout.host/posts/2019-06-10-welcome/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-10-welcome/</guid>
+      <description>Welcome to a place for projects I want to do or i&amp;rsquo;m going to do&amp;hellip;
+ Get rid of Google  Gmail - ProtonMail Google Drive - NextCloud Google Photos - NextCloud Google Chrome - Firefox Google Search - DuckDuckGo  Get rid of Facebook New Social Fosstodon.org Getting federated This space Secure my connections.. everywhere - ProtonVPN Replacing Apple Notes - Joplin RaspberryPI &amp;amp; NOAA Sat  </description>
+    </item>
+    
+  </channel>
+</rss>

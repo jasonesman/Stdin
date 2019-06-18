@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/tags/security/</link>
+    <description>Recent content in security on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Project! Goodbye Gmail</title>
+      <link>https://stdin.stdout.host/posts/2019-06-11-first-project/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-11-first-project/</guid>
+      <description>Goodbye Google  This project will be an on going project. It will be how to get rid of most of Google and Facebook from my life. I&#39;ve started and already feel better about it.
+Goodbye Gmail  The first step in this process is to get rid of Gmail. There are several free solutions, but as i&#39;ve found out nothing is really free.
+ Why get rid of Gmail?</description>
+    </item>
+    
+    <item>
+      <title>Welcome to my New Home!</title>
+      <link>https://stdin.stdout.host/posts/2019-06-10-welcome/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-10-welcome/</guid>
+      <description>Welcome to a place for projects I want to do or i&amp;rsquo;m going to do&amp;hellip;
+ Get rid of Google  Gmail - ProtonMail Google Drive - NextCloud Google Photos - NextCloud Google Chrome - Firefox Google Search - DuckDuckGo  Get rid of Facebook New Social Fosstodon.org Getting federated This space Secure my connections.. everywhere - ProtonVPN Replacing Apple Notes - Joplin RaspberryPI &amp;amp; NOAA Sat  </description>
+    </item>
+    
+  </channel>
+</rss>
