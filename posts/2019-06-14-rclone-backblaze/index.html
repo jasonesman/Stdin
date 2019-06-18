@@ -16,7 +16,7 @@ First we need a couple of items installed.
 
 <meta itemprop="datePublished" content="2019-06-14T03:41:10&#43;02:00" />
 <meta itemprop="dateModified" content="2019-06-14T03:41:10&#43;02:00" />
-<meta itemprop="wordCount" content="258">
+<meta itemprop="wordCount" content="266">
 
 
 
@@ -96,17 +96,17 @@ First we need a couple of items installed.
 + Copy the program into your binary folder: <code>cp $GOPATH/bin/rclone /usr/bin/</code>
 <br /></p>
 
-<h3 id="now-we-need-to-configure-rclone-to-use-backblaze-rclone-config">Now we need to configure rclone to use Backblaze: <strong>rclone config</strong><a href="#now-we-need-to-configure-rclone-to-use-backblaze-rclone-config" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h3 id="now-we-need-to-configure-rclone-to-use-backblaze-rclone-config">Now we need to configure rclone to use Backblaze: <code>rclone config</code><a href="#now-we-need-to-configure-rclone-to-use-backblaze-rclone-config" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 
 <p><br />
-* Choose New Remote
-* Type Backblaze for remote name
-* Choose 5 for Backblaze B2
-* Enter your Application ID
-* Enter your Application Key
-* Hit N for no
-* Choose Y for yes its ok
-* Choose Quit config
++ Choose New Remote
++ Type Backblaze for remote name
++ Choose 5 for Backblaze B2
++ Enter your Application ID
++ Enter your Application Key
++ Hit N for no
++ Choose Y for yes its ok
++ Choose Quit config
 <br /></p>
 
 <h3 id="crontab-and-schedule">Crontab and schedule<a href="#crontab-and-schedule" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
@@ -114,44 +114,42 @@ First we need a couple of items installed.
 <p><br />
 Now that you have it installed we need to setup our script. I made this in <code>/root/backup.sh</code>
 <br /></p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nv">src</span><span class="o">=</span>/var/www/html/nextcloud/data/
+<span class="nv">dest</span><span class="o">=</span>Backblaze:my-bucket-name
+<span class="nv">log_file</span><span class="o">=</span>/var/log/rclone.log
+<span class="nv">log_level</span><span class="o">=</span>INFO
+<span class="nv">min_age</span><span class="o">=</span>15m
+<span class="nv">transfers</span><span class="o">=</span><span class="m">16</span>
 
-<p>#!/bin/bash</p>
+/usr/local/bin/rclone sync <span class="se">\
+</span><span class="se"></span>	--copy-links <span class="se">\
+</span><span class="se"></span>	--b2-hard-delete <span class="se">\
+</span><span class="se"></span>	--fast-list <span class="se">\
+</span><span class="se"></span>	--min-age <span class="si">${</span><span class="nv">min_age</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>	--transfers <span class="si">${</span><span class="nv">transfers</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>	--log-level <span class="si">${</span><span class="nv">log_level</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>	--log-file <span class="si">${</span><span class="nv">log_file</span><span class="si">}</span> <span class="se">\
+</span><span class="se"></span>	 <span class="si">${</span><span class="nv">src</span><span class="si">}</span> <span class="si">${</span><span class="nv">dest</span><span class="si">}</span> <span class="nv">$@</span>
+<span class="nv">rc</span><span class="o">=</span><span class="nv">$?</span>
 
-<p>src=/var/www/html/nextcloud/data/
-dest=Backblaze:my-bucket-name
-log_file=/var/log/rclone.log
-log_level=INFO
-min_age=15m
-transfers=16</p>
-
-<p>/usr/local/bin/rclone sync <br />
-    &ndash;copy-links <br />
-    &ndash;b2-hard-delete <br />
-    &ndash;fast-list <br />
-    &ndash;min-age ${min_age} <br />
-    &ndash;transfers ${transfers} <br />
-    &ndash;log-level ${log_level} <br />
-    &ndash;log-file ${log_file} <br />
-     ${src} ${dest} $@
-rc=$?</p>
-
-<p>if [[ $rc != 0 ]]; then
-    echo &ldquo;An error occurred. Please check the logs.&rdquo;
-else
-    echo &ldquo;Backup succeeded&rdquo;
-fi</p>
-
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$rc</span> !<span class="o">=</span> <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+	<span class="nb">echo</span> <span class="s2">&#34;An error occurred. Please check the logs.&#34;</span> 
+<span class="k">else</span>
+	<span class="nb">echo</span> <span class="s2">&#34;Backup succeeded&#34;</span> 
+<span class="k">fi</span></code></pre></div>
 <p><br />
 Now to make a cronjob for the script to run.
 <br />
 crontab -e
 <br />
-0 5 * * * /root/backup.sh &gt;/dev/null 2&gt;&amp;1</p>
+<code>0 5 * * * /root/backup.sh &gt;/dev/null 2&gt;&amp;1</code></p>
 
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>258 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>266 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-13 20:41 -0500</p>
 			</footer>
 		</article>
