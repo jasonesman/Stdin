@@ -52,7 +52,7 @@ First we need a couple of items installed.
 <p><br />
 Now that you have it installed we need to setup our script. I made this in <code>/root/backup.sh</code>
 <br /></p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/bash
+<div class="highlight"><pre class="chroma"><code class="language-markup" data-lang="markup"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
 <span class="nv">src</span><span class="o">=</span>/var/www/html/nextcloud/data/
 <span class="nv">dest</span><span class="o">=</span>Backblaze:my-bucket-name
