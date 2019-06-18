@@ -46,8 +46,9 @@ First we need a couple of items installed.
 + Enter your Application Key<br />
 + Hit N for no<br />
 + Choose Y for yes its ok<br />
-+ Choose Quit config<br />
-<br /></p>
++ Choose Quit config<br /></p>
+
+<p><br /></p>
 
 <h3 id="crontab-and-schedule">Crontab and schedule</h3>
 
