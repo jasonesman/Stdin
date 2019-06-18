@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/categories/</link>
+    <description>Recent content in Categories on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2019 03:41:10 +0200</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>backup, rclone, backblaze, nextcloud</title>
+      <link>https://stdin.stdout.host/categories/backup-rclone-backblaze-nextcloud/</link>
+      <pubDate>Fri, 14 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/backup-rclone-backblaze-nextcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google, gmail, protonmail, email</title>
+      <link>https://stdin.stdout.host/categories/google-gmail-protonmail-email/</link>
+      <pubDate>Tue, 11 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/google-gmail-protonmail-email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google, facebook, nextcloud, duckduckgo, protonmail, protonvpn, fosstodon, firefox</title>
+      <link>https://stdin.stdout.host/categories/google-facebook-nextcloud-duckduckgo-protonmail-protonvpn-fosstodon-firefox/</link>
+      <pubDate>Mon, 10 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/google-facebook-nextcloud-duckduckgo-protonmail-protonvpn-fosstodon-firefox/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

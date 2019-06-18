@@ -1,156 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Stdin Stdout</title>
-		<link>https://stdin.stdout.host/posts/</link>
-		<description>Recent content in Posts on Stdin Stdout</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Fri, 14 Jun 2019 03:41:10 +0200</lastBuildDate>
-		<atom:link href="https://stdin.stdout.host/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Backing up NextCloud data with Rclone and Backblaze</title>
-			<link>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</link>
-			<pubDate>Fri, 14 Jun 2019 03:41:10 +0200</pubDate>
-			
-			<guid>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</guid>
-			<description>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
+  <channel>
+    <title>Posts on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/posts/</link>
+    <description>Recent content in Posts on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2019 03:41:10 +0200</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backing up NextCloud data with Rclone and Backblaze</title>
+      <link>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</link>
+      <pubDate>Fri, 14 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</guid>
+      <description>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
 First we need a couple of items installed. 
 + Install some prerequisites: yum install goland git
 -You should have setup backblaze b2, and created an application key.</description>
-			<content type="html"><![CDATA[
-
-<p><p>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone.  We are NOT trying to do a full server backup, I can rebuild the server.  We are only going to backup the nextcloud data directory.<br />
-</p>
-<br /></p>
-
-<h3 id="first-we-need-a-couple-of-items-installed">First we need a couple of items installed.</h3>
-
-<p><br />
-+ Install some prerequisites: <code>yum install goland git</code><br />
-  -<em>You should have setup backblaze b2, and created an application key.  If not, I will write this up later.</em><br />
-+ Make a place for Go: <code>mkdir $HOME/gopath</code><br />
-+ Add Go&rsquo;s folder to your path: <code>export GOPATH=&quot;$HOME/gopath/&quot;</code><br />
-+ Install rclone in the GO folder: <code>go get github.com/ncw/rclone</code><br />
-+ Copy the program into your binary folder: <code>cp $GOPATH/bin/rclone /usr/bin/</code><br />
-<br /></p>
-
-<h3 id="now-we-need-to-configure-rclone-to-use-backblaze-rclone-config">Now we need to configure rclone to use Backblaze: <code>rclone config</code></h3>
-
-<p><br />
-+ Choose New Remote<br />
-+ Type Backblaze for remote name<br />
-+ Choose 5 for Backblaze B2<br />
-+ Enter your Application ID<br />
-+ Enter your Application Key<br />
-+ Hit N for no<br />
-+ Choose Y for yes its ok<br />
-+ Choose Quit config<br /></p>
-
-<p><br /></p>
-
-<h3 id="crontab-and-schedule">Crontab and schedule</h3>
-
-<p><br />
-Now that you have it installed we need to setup our script. I made this in <code>/root/backup.sh</code>
-<br /></p>
-<div class="highlight"><pre class="chroma"><code class="language-markup" data-lang="markup"><span class="cp">#!/bin/bash
-</span><span class="cp"></span>
-<span class="nv">src</span><span class="o">=</span>/var/www/html/nextcloud/data/
-<span class="nv">dest</span><span class="o">=</span>Backblaze:my-bucket-name
-<span class="nv">log_file</span><span class="o">=</span>/var/log/rclone.log
-<span class="nv">log_level</span><span class="o">=</span>INFO
-<span class="nv">min_age</span><span class="o">=</span>15m
-<span class="nv">transfers</span><span class="o">=</span><span class="m">16</span>
-
-/usr/local/bin/rclone sync <span class="se">\
-</span><span class="se"></span>	--copy-links <span class="se">\
-</span><span class="se"></span>	--b2-hard-delete <span class="se">\
-</span><span class="se"></span>	--fast-list <span class="se">\
-</span><span class="se"></span>	--min-age <span class="si">${</span><span class="nv">min_age</span><span class="si">}</span> <span class="se">\
-</span><span class="se"></span>	--transfers <span class="si">${</span><span class="nv">transfers</span><span class="si">}</span> <span class="se">\
-</span><span class="se"></span>	--log-level <span class="si">${</span><span class="nv">log_level</span><span class="si">}</span> <span class="se">\
-</span><span class="se"></span>	--log-file <span class="si">${</span><span class="nv">log_file</span><span class="si">}</span> <span class="se">\
-</span><span class="se"></span>	 <span class="si">${</span><span class="nv">src</span><span class="si">}</span> <span class="si">${</span><span class="nv">dest</span><span class="si">}</span> <span class="nv">$@</span>
-<span class="nv">rc</span><span class="o">=</span><span class="nv">$?</span>
-
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$rc</span> !<span class="o">=</span> <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-	<span class="nb">echo</span> <span class="s2">&#34;An error occurred. Please check the logs.&#34;</span> 
-<span class="k">else</span>
-	<span class="nb">echo</span> <span class="s2">&#34;Backup succeeded&#34;</span> 
-<span class="k">fi</span></code></pre></div>
-<p><br />
-Now to make a cronjob for the script to run.
-<br />
-crontab -e
-<br />
-<code>0 5 * * * /root/backup.sh &gt;/dev/null 2&gt;&amp;1</code></p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>First Project!  Goodbye Gmail</title>
-			<link>https://stdin.stdout.host/posts/2019-06-11-first-project/</link>
-			<pubDate>Tue, 11 Jun 2019 03:41:10 +0200</pubDate>
-			
-			<guid>https://stdin.stdout.host/posts/2019-06-11-first-project/</guid>
-			<description>Goodbye Google  This project will be an on going project. It will be how to get rid of most of Google and Facebook from my life. I&#39;ve started and already feel better about it.
+    </item>
+    
+    <item>
+      <title>First Project!  Goodbye Gmail</title>
+      <link>https://stdin.stdout.host/posts/2019-06-11-first-project/</link>
+      <pubDate>Tue, 11 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-11-first-project/</guid>
+      <description>Goodbye Google  This project will be an on going project. It will be how to get rid of most of Google and Facebook from my life. I&#39;ve started and already feel better about it.
 Goodbye Gmail  The first step in this process is to get rid of Gmail. There are several free solutions, but as i&#39;ve found out nothing is really free.
  Why get rid of Gmail?</description>
-			<content type="html"><![CDATA[
-
-<h2 id="goodbye-google-https-www-google-com">Goodbye <a href="https://www.google.com/">Google</a></h2>
-
-<p> This project will be an on going project. It will be how to get rid of most of Google and Facebook from my life. I've started and already feel better about it.</p>
-
-<h3 id="goodbye-gmail-https-www-gmail-com">Goodbye <a href="https://www.gmail.com/">Gmail</a></h3>
-
-<p> The first step in this process is to get rid of Gmail.  There are several free solutions, but as i've found out nothing is really free.</p>
-
-<p> Why get rid of Gmail? Why am I getting rid of Google? Have you ever searched for something, bought something not from Google, and next thing you see, the add in Gmail?</p>
-
-<p> Gmail isn't free, the datacenters to run Google are NOT free.  In 2018 Google announced revenues of $31.84 billion.  They are making money, and it is from your data.</p>
-
-<p> Login to your account on a browser.  Go to "Web & App Activity" and "History" and view the history.  It shows data from items on Google Maps from my iphone, searches i've done in Gmail and articles i've read on Google news. It doesn't stop there.  Till recently even when you "Delete" this data it was still being stored.</p>
-
-<p>Google is mining your gmail data for shopping habbits. Want to see how much they know about <a href="https://myaccount.google.com/purchases?pli=1">your habbits</a> </p>
-
-<p> I wanted something I felt secure with, I wanted it to be my email.  My choice for this was <a href="https://www.protonmail.com/">Protonmail</a> I give it to the Swiss they got one thing right and that is privacy. I started with a free account to give it a try and have since upgraded.
- </p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>Welcome to New Home!</title>
-			<link>https://stdin.stdout.host/posts/2019-06-10-welcome/</link>
-			<pubDate>Mon, 10 Jun 2019 03:41:10 +0200</pubDate>
-			
-			<guid>https://stdin.stdout.host/posts/2019-06-10-welcome/</guid>
-			<description>Welcome to a place for projects I want to do or i&amp;rsquo;m going to do&amp;hellip;
+    </item>
+    
+    <item>
+      <title>Welcome to New Home!</title>
+      <link>https://stdin.stdout.host/posts/2019-06-10-welcome/</link>
+      <pubDate>Mon, 10 Jun 2019 03:41:10 +0200</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-10-welcome/</guid>
+      <description>Welcome to a place for projects I want to do or i&amp;rsquo;m going to do&amp;hellip;
  Get rid of Google  Gmail - ProtonMail Google Drive - NextCloud Google Photos - NextCloud Google Chrome - Firefox Google Search - DuckDuckGo  Get rid of Facebook New Social Fosstodon.org Getting federated This space Secure my connections.. everywhere - ProtonVPN Replacing Apple Notes - Joplin RaspberryPI &amp;amp; NOAA Sat  </description>
-			<content type="html"><![CDATA[<p>Welcome to a place for projects I want to do or i&rsquo;m going to do&hellip;</p>
-
-<ol>
-<li>Get rid of Google
-
-<ul>
-<li><a href="/posts/2019-06-11-first-project/">Gmail - ProtonMail</a></li>
-<li>Google Drive - <a href="https://nextcloud.com/">NextCloud</a></li>
-<li>Google Photos - <a href="https://nextcloud.com/">NextCloud</a></li>
-<li>Google Chrome - <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></li>
-<li>Google Search - <a href="https://www.duckduckgo.com/">DuckDuckGo</a></li>
-</ul></li>
-<li>Get rid of <a href="https://medium.com/s/story/there-is-literally-no-excuse-to-keep-using-facebook-anymore-f76eaa5573fa">Facebook</a></li>
-<li>New Social <a href="https://fosstodon.org/web/getting-started">Fosstodon.org</a></li>
-<li>Getting federated</li>
-<li><a href="/">This space</a></li>
-<li>Secure my connections.. everywhere - ProtonVPN</li>
-<li>Replacing Apple Notes - <a href="https://joplinapp.org/">Joplin</a></li>
-<li>RaspberryPI &amp; NOAA Sat</li>
-</ol>
-]]></content>
-		</item>
-		
-	</channel>
+    </item>
+    
+  </channel>
 </rss>

@@ -8,6 +8,12 @@
   </url>
   
   <url>
+    <loc>https://stdin.stdout.host/categories/</loc>
+    <lastmod>2019-06-14T03:41:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://stdin.stdout.host/posts/</loc>
     <lastmod>2019-06-14T03:41:10+02:00</lastmod>
     <priority>0</priority>
@@ -20,13 +26,31 @@
   </url>
   
   <url>
+    <loc>https://stdin.stdout.host/categories/backup-rclone-backblaze-nextcloud/</loc>
+    <lastmod>2019-06-14T03:41:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://stdin.stdout.host/posts/2019-06-11-first-project/</loc>
     <lastmod>2019-06-11T03:41:10+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://stdin.stdout.host/categories/google-gmail-protonmail-email/</loc>
+    <lastmod>2019-06-11T03:41:10+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://stdin.stdout.host/posts/2019-06-10-welcome/</loc>
     <lastmod>2019-06-10T03:41:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/categories/google-facebook-nextcloud-duckduckgo-protonmail-protonvpn-fosstodon-firefox/</loc>
+    <lastmod>2019-06-10T03:41:10+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
