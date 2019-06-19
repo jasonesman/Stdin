@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Current Workout as of 6/18/2019</title>
+      <link>https://stdin.stdout.host/posts/2019-06-18-workout/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-18-workout/</guid>
+      <description>My current daily workout, on top of the weights, I do cardio before/after or just during the day. I was getting up at 5:30am and doing cardio then doing weights in the evening after work. I am now doing all of my cardio and weights at 4:30 am before work. I also go for walks during lunch, usually 2 to 3 miles.
+Monday Chest and Triceps 
+   Exercise Sets Reps</description>
+    </item>
     
     <item>
       <title>Backing up NextCloud data with Rclone and Backblaze B2</title>
