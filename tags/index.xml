@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://stdin.stdout.host/tags/privacy/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://stdin.stdout.host/tags/security/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/tags/security/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>fitness</title>
@@ -44,15 +62,6 @@
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/tags/storage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>https://stdin.stdout.host/tags/security/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stdin.stdout.host/tags/security/</guid>
       <description></description>
     </item>
     
