@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/tags/linux/</link>
+    <description>Recent content in linux on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NextCloud on Centos 7 in a VPS</title>
+      <link>https://stdin.stdout.host/posts/2019-06-26-nextcloud/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-26-nextcloud/</guid>
+      <description>NextCloud will replace both Google Photos, Google Drive, Dropbox, and OneDrive. It will sync your devices and it will backup your photos. I have a lot of documents I need to move, i want to get them from all my devices, this makes it super easy. Yes Nextcloud offers a lot more but this is what i&#39;m going to use it for. It is secure when you follow their best practices.</description>
+    </item>
+    
+  </channel>
+</rss>

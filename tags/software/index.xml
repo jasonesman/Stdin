@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Standard Input \ Standard Output</title>
+    <link>https://stdin.stdout.host/tags/software/</link>
+    <description>Recent content in software on Standard Input \ Standard Output</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://stdin.stdout.host/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firefox instead of Chrome</title>
+      <link>https://stdin.stdout.host/posts/2019-06-29-firefox/</link>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-29-firefox/</guid>
+      <description>Getting rid of Google in my life has lead me back to [Firefox](https://www.mozilla.org/en-US/firefox/new/) I started on the web with Netscape Navigator. I used this for years refusing to use Microsoft Explorer on anything. That was till I was bit by the Google bug. I bacame a fan boy of anything they put out. After all, Don&#39;t be evil! I began to run Chrome on everything. That was till I opened my eyes!</description>
+    </item>
+    
+  </channel>
+</rss>

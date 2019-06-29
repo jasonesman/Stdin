@@ -3,36 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://stdin.stdout.host/posts/2019-06-20-really-leave-google/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <loc>https://stdin.stdout.host/categories/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://stdin.stdout.host/categories/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://stdin.stdout.host/posts/2019-06-29-firefox/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://stdin.stdout.host/posts/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stdin.stdout.host/tags/privacy/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://stdin.stdout.host/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://stdin.stdout.host/tags/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/categories/firefox/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/tags/foss/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/tags/software/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/posts/2019-06-20-really-leave-google/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/tags/privacy/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,12 +160,6 @@
   
   <url>
     <loc>https://stdin.stdout.host/categories/facebook/</loc>
-    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stdin.stdout.host/categories/firefox/</loc>
     <lastmod>2019-06-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
