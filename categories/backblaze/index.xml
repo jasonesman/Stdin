@@ -17,10 +17,7 @@
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/posts/2019-06-14-rclone-backblaze/</guid>
-      <description>We are going to use backblaze b2, cost is better then Amazon S3. To backup the data we are going to use rclone. We are NOT trying to do a full server backup, I can rebuild the server. We are only going to backup the nextcloud data directory.
-First we need a couple of items installed. 
-+ Install some prerequisites: yum install goland git
--You should have setup backblaze b2, and created an application key.</description>
+      <description>I&amp;rsquo;m only backing this up to backblaze b2 right now, I also have a weekly snapshot of my vm. To make our backup i&amp;rsquo;m using rclone. I have backblaze set to keep a week of changes. The cost is very small, it is costing me about $0.40 a month right now. We are not going to backup all the server, just the data. I also include a week of database dumps.</description>
     </item>
     
   </channel>
