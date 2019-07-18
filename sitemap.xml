@@ -79,6 +79,41 @@
   </url>
   
   <url>
+    <loc>https://stdin.stdout.host/categories/mariadb/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/posts/2019-06-26-nextcloud/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/categories/redis/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/categories/centos/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/tags/hosting/</loc>
+    <lastmod>2019-06-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stdin.stdout.host/categories/nextcloud/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://stdin.stdout.host/posts/2019-06-20-really-leave-google/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
   </url>
@@ -137,12 +172,6 @@
   
   <url>
     <loc>https://stdin.stdout.host/tags/backup/</loc>
-    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://stdin.stdout.host/categories/nextcloud/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

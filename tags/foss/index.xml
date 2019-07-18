@@ -20,5 +20,14 @@
       <description>Getting rid of Google in my life has lead me back to Firefox. I started on the web with Netscape Navigator. I used this for years refusing to use Microsoft Explorer (Edge) on anything. That was till I was hit by the Google love bug. I bacame a fan boy of anything they put out, I was in the beta for Chrome, Google+, Hangouts etc. After all, Don&amp;rsquo;t be evil!</description>
     </item>
     
+    <item>
+      <title>NextCloud on Centos 7 in a VPS</title>
+      <link>https://stdin.stdout.host/posts/2019-06-26-nextcloud/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-06-26-nextcloud/</guid>
+      <description>NextCloud will replace both Google Photos, Google Drive, Dropbox, and OneDrive. It will sync your devices and it will backup your photos. I have a lot of documents I need to move, i want to get them from all my devices, this makes it super easy. Yes Nextcloud offers a lot more but this is what i&#39;m going to use it for. It is secure when you follow their best practices.</description>
+    </item>
+    
   </channel>
 </rss>

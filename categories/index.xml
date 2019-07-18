@@ -39,6 +39,42 @@
     </item>
     
     <item>
+      <title>MariaDB</title>
+      <link>https://stdin.stdout.host/categories/mariadb/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/mariadb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://stdin.stdout.host/categories/redis/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>centos</title>
+      <link>https://stdin.stdout.host/categories/centos/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nextcloud</title>
+      <link>https://stdin.stdout.host/categories/nextcloud/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/nextcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>google</title>
       <link>https://stdin.stdout.host/categories/google/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
@@ -71,15 +107,6 @@
       <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/categories/backblaze/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nextcloud</title>
-      <link>https://stdin.stdout.host/categories/nextcloud/</link>
-      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stdin.stdout.host/categories/nextcloud/</guid>
       <description></description>
     </item>
     
