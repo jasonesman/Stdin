@@ -6,10 +6,20 @@
     <description>Recent content in software on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pi Madness!</title>
+      <link>https://stdin.stdout.host/posts/2019-07-17-pi-maddness/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/posts/2019-07-17-pi-maddness/</guid>
+      <description>Completed a couple of Pi Projects today. First was a Pi Musicbox player using some Bose speakers I picked up. The second was setting up PiHole and configuring it to use DOH (DNS over HTTPS) for my local lan. I really need to get rid of my ATT Uverse Gateway and get a good router/firewall in front of it.
+PiHole The PiHole is an addblocker, but it does more. If you setup DOH (Dns over HTTPS) it secures your DNS from your local internet service tracking you.</description>
+    </item>
     
     <item>
       <title>Firefox instead of Chrome</title>

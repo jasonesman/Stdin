@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pi</title>
+      <link>https://stdin.stdout.host/tags/pi/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/tags/pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://stdin.stdout.host/tags/linux/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://stdin.stdout.host/tags/software/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/tags/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>foss</title>
@@ -17,15 +44,6 @@
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stdin.stdout.host/tags/foss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>https://stdin.stdout.host/tags/software/</link>
-      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stdin.stdout.host/tags/software/</guid>
       <description></description>
     </item>
     

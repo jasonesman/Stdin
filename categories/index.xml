@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Standard Input \ Standard Output</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://stdin.stdout.host/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>musicbox</title>
+      <link>https://stdin.stdout.host/categories/musicbox/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/musicbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pihole</title>
+      <link>https://stdin.stdout.host/categories/pihole/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stdin.stdout.host/categories/pihole/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>firefox</title>
